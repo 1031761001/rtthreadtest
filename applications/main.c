@@ -66,6 +66,7 @@ static int mqtt_thread_entry(void)
             LOG_D("wait netdev internet up...");
             rt_wlan_connect(ssid,wifi_password);
             rt_thread_mdelay(500);
+            rt_thread_mdelay(500);
         }
         else
         {
